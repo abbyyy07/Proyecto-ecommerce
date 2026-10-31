@@ -1,9 +1,5 @@
-import { NextResponse } from "next/server";
-
-export function middleware(request) {
-  return NextResponse.next();
-}
+export { default } from 'next-auth/middleware';
 
 export const config = {
-  matcher: ["/cuenta/:path*", "/admin/:path*"],
+  matcher: ['/cuenta/:path*', '/admin/:path*'],
 };
